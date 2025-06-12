@@ -16,7 +16,13 @@ tryCatch({
     resource_type = "any",
     sector = 3,
     include_date = TRUE,
-    include_proposal = TRUE
+    include_proposal = TRUE,
+    include_lbs = TRUE,
+    include_date_force = TRUE,
+    include_date_endvalid = TRUE,
+    include_date_transpos = TRUE,
+    include_date_lodged = TRUE,
+    include_force = TRUE,
   ) |>
     elx_run_query() |>
     select(-work)
